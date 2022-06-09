@@ -1,0 +1,9 @@
+C:\Users\卓卓\source\repos\BMS\Entity\bin\Debug\netstandard2.0\Entity.deps.json
+C:\Users\卓卓\source\repos\BMS\Entity\bin\Debug\netstandard2.0\Entity.dll
+C:\Users\卓卓\source\repos\BMS\Entity\bin\Debug\netstandard2.0\Entity.pdb
+C:\Users\卓卓\source\repos\BMS\Entity\obj\Debug\netstandard2.0\Entity.csprojAssemblyReference.cache
+C:\Users\卓卓\source\repos\BMS\Entity\obj\Debug\netstandard2.0\Entity.csproj.CoreCompileInputs.cache
+C:\Users\卓卓\source\repos\BMS\Entity\obj\Debug\netstandard2.0\Entity.AssemblyInfoInputs.cache
+C:\Users\卓卓\source\repos\BMS\Entity\obj\Debug\netstandard2.0\Entity.AssemblyInfo.cs
+C:\Users\卓卓\source\repos\BMS\Entity\obj\Debug\netstandard2.0\Entity.dll
+C:\Users\卓卓\source\repos\BMS\Entity\obj\Debug\netstandard2.0\Entity.pdb

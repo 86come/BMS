@@ -1,0 +1,57 @@
+﻿<Window x:Class="BMS.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BMS"
+        mc:Ignorable="d"
+         WindowStartupLocation="CenterScreen"
+        Title="Register" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="50" />
+            <Setter  Property="Template" >
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}" >
+                        <Border BorderBrush="Orange" BorderThickness="1" CornerRadius="25,25,25,25">
+                            <Border.Background>#FFDDDDDD</Border.Background>
+                            <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center" ></ContentPresenter>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Height" Value="60"/>
+                    <Setter Property="Width" Value="60"/>
+                    <Setter  Property="Template" >
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}" >
+                                <Border BorderBrush="Green" BorderThickness="1" CornerRadius="25,25,25,25">
+                                    <Border.Background>SkyBlue</Border.Background>
+                                    <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center" ></ContentPresenter>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="450" Margin="0,0,-6.4,-30" VerticalAlignment="Top" Width="800" Source="image\bg.png" Stretch="Fill"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="218,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="txtID"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="218,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="txtPwd"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="218,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="txtSex"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="218,345,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="txtTel"/>
+        <Button FontFamily="kaiti" FontSize="22" Content="注册并登录" HorizontalAlignment="Left" Margin="541,194,0,0" VerticalAlignment="Top" Width="136" Click="Button_Click" Height="55"/>
+        <TextBlock FontFamily="kaiti" FontSize="22" HorizontalAlignment="Left" Margin="82,84,0,0" TextWrapping="Wrap" Text="用户名" VerticalAlignment="Top"/>
+        <TextBlock FontFamily="kaiti" FontSize="22" HorizontalAlignment="Left" Margin="100,172,0,0" TextWrapping="Wrap" Text="密码" VerticalAlignment="Top" RenderTransformOrigin="0.261,0.474"/>
+        <TextBlock FontFamily="kaiti" FontSize="22" HorizontalAlignment="Left" Margin="100,254,0,0" TextWrapping="Wrap" Text="性别" VerticalAlignment="Top" RenderTransformOrigin="-0.018,0.912"/>
+        <TextBlock FontFamily="kaiti" FontSize="22" HorizontalAlignment="Left" Margin="82,345,0,0" TextWrapping="Wrap" Text="联系电话" VerticalAlignment="Top" RenderTransformOrigin="0.345,0.295"/>
+        <Button FontFamily="kaiti" FontSize="20" Content="返回登录界面" HorizontalAlignment="Left" Margin="541,314,0,0" VerticalAlignment="Top" Width="136" Height="55" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,47 @@
+﻿<Page x:Class="BMS.selectbr"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BMS"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="selectbr">
+    <StackPanel>
+        <TextBlock Text="借还记录"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Row="0"  Margin="10">
+                <TextBlock Text="借阅记录："/>
+                <DataGrid Name="dataGrid1" AutoGenerateColumns="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="用户" Binding="{Binding id}" />
+                        <DataGridTextColumn Header="书编号" Binding="{Binding bno}" />
+                        <DataGridTextColumn Header="借阅时间" Binding="{Binding btime}" />
+                        <DataGridTextColumn Header="联系方式" Binding="{Binding btel}" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+          
+            <StackPanel Grid.Row="1"  Margin="10">
+                <TextBlock Text="还书记录："/>
+                <DataGrid Name="dataGrid2" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="用户" Binding="{Binding id}" />
+                    <DataGridTextColumn Header="书编号" Binding="{Binding bno}" />
+                    <DataGridTextColumn Header="借阅时间" Binding="{Binding rtime}" />
+                    <DataGridTextColumn Header="联系方式" Binding="{Binding rtel}" />
+                </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+            
+        </Grid>
+    </StackPanel>
+</Page>
