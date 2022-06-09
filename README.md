@@ -8,7 +8,7 @@
 
 1. 开发平台：Microsoft Visual Studio 2017
 2. 语言：c#
-3. 运行环境：windows10
+3. 运行环境：windows11
 4. 数据库：vs内置sqlsever数据库
 5. 框架：Microsoft .NET Framework 4.6.1
 
