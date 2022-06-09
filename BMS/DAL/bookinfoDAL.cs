@@ -14,7 +14,7 @@ namespace DAL
         public bookinfoDAL() { }
         public DataTable select()
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\卓卓\Desktop\C#\BMS\BMS\BMSDB.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\卓卓\Desktop\C#\c# bms\BMS\BMS\BMSDB.mdf;Integrated Security=True");
             con.Open();
             String str1 = "select * from book";
             SqlCommand cmd = new SqlCommand(str1, con);
@@ -27,7 +27,7 @@ namespace DAL
 
         public DataTable select1(book b)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\卓卓\Desktop\C#\BMS\BMS\BMSDB.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\卓卓\Desktop\C#\c# bms\BMS\BMS\BMSDB.mdf;Integrated Security=True");
             con.Open();
             String str1 = "select * from book where bno=@bno";
             SqlCommand cmd = new SqlCommand(str1, con);
@@ -42,7 +42,7 @@ namespace DAL
 
         public void update(book b, book b1)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\卓卓\Desktop\C#\BMS\BMS\BMSDB.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\卓卓\Desktop\C#\c# bms\BMS\BMS\BMSDB.mdf;Integrated Security=True");
             con.Open();
             String str1 = "update book set bno=@bno,bname=@bname,bauthor=@bauthor,bcbs=@bcbs,ISBN=@ISBN where bno=@bno1 and bname=@bname1 and bauthor=@bauthor1 and bcbs=@bcbs1 and ISBN=@ISBN1";
             SqlCommand cmd = new SqlCommand(str1, con);
@@ -61,7 +61,7 @@ namespace DAL
 
         public void insert(book b)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\卓卓\Desktop\C#\BMS\BMS\BMSDB.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\卓卓\Desktop\C#\c# bms\BMS\BMS\BMSDB.mdf;Integrated Security=True");
             con.Open();
             String str1 = "insert into book values (@bno,@bname,@bauthor,@bcbs,@ISBN)";
             SqlCommand cmd = new SqlCommand(str1, con);
@@ -75,7 +75,7 @@ namespace DAL
 
         public void delete(book b)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\卓卓\Desktop\C#\BMS\BMS\BMSDB.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\卓卓\Desktop\C#\c# bms\BMS\BMS\BMSDB.mdf;Integrated Security=True");
             con.Open();
             String str1 = "delete from book where bno=@bno and bname=@bname and bauthor=@bauthor and bcbs=@bcbs and ISBN=@ISBN";
             SqlCommand cmd = new SqlCommand(str1, con);

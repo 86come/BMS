@@ -16,7 +16,7 @@ namespace DAL
 
         public DataTable select()
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\卓卓\Desktop\C#\BMS\BMS\BMSDB.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\卓卓\Desktop\C#\c# bms\BMS\BMS\BMSDB.mdf;Integrated Security=True");
             con.Open();
             String str1 = "select * from borrow";
             SqlCommand cmd = new SqlCommand(str1, con);
@@ -29,7 +29,7 @@ namespace DAL
 
         public DataTable select2(borrow b)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\卓卓\Desktop\C#\BMS\BMS\BMSDB.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\卓卓\Desktop\C#\c# bms\BMS\BMS\BMSDB.mdf;Integrated Security=True");
             con.Open();
             String str1 = "select * from borrow where id=@id";
             SqlCommand cmd = new SqlCommand(str1, con);
@@ -43,7 +43,7 @@ namespace DAL
 
         public void insert(borrow b)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\卓卓\Desktop\C#\BMS\BMS\BMSDB.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\卓卓\Desktop\C#\c# bms\BMS\BMS\BMSDB.mdf;Integrated Security=True");
             con.Open();
             String str1 = "insert into borrow values(@id,@bno,@btime,@btel)";
             SqlCommand cmd = new SqlCommand(str1, con);
@@ -56,7 +56,7 @@ namespace DAL
         }
         public bool select1(borrow b)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\卓卓\Desktop\C#\BMS\BMS\BMSDB.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\卓卓\Desktop\C#\c# bms\BMS\BMS\BMSDB.mdf;Integrated Security=True");
             con.Open();
             String str1 = "select * from borrow where bno=@bno";
             SqlCommand cmd = new SqlCommand(str1, con);

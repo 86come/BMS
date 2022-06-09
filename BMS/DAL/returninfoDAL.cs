@@ -15,7 +15,7 @@ namespace DAL
 
         public DataTable select()
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\卓卓\Desktop\C#\BMS\BMS\BMSDB.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\卓卓\Desktop\C#\c# bms\BMS\BMS\BMSDB.mdf;Integrated Security=True");
             con.Open();
             String str1 = "select * from \"return\"";
             SqlCommand cmd = new SqlCommand(str1, con);
@@ -28,7 +28,7 @@ namespace DAL
 
         public void insert(@return r)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\卓卓\Desktop\C#\BMS\BMS\BMSDB.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\卓卓\Desktop\C#\c# bms\BMS\BMS\BMSDB.mdf;Integrated Security=True");
             con.Open();
             String str1 = "insert into \"return\" values(@id,@bno,@rtime,@rtel)";
             SqlCommand cmd = new SqlCommand(str1, con);

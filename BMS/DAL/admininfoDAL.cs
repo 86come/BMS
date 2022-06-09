@@ -8,7 +8,7 @@ namespace DAL
         public admininfoDAL() { }
         public bool Exists(String id,String pwd)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\卓卓\Desktop\C#\BMS\BMS\BMSDB.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\卓卓\Desktop\C#\c# bms\BMS\BMS\BMSDB.mdf;Integrated Security=True");
             con.Open();
             String str1 = "select * from admin where aId=@aid and apwd=@apwd";
             SqlCommand cmd = new SqlCommand(str1, con);

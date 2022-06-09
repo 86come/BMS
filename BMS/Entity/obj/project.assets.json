@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\卓卓\\Desktop\\C#\\BMS\\Entity\\model.csproj",
+      "projectUniqueName": "C:\\Users\\卓卓\\Desktop\\C#\\c# bms\\BMS\\Entity\\model.csproj",
       "projectName": "model",
-      "projectPath": "C:\\Users\\卓卓\\Desktop\\C#\\BMS\\Entity\\model.csproj",
+      "projectPath": "C:\\Users\\卓卓\\Desktop\\C#\\c# bms\\BMS\\Entity\\model.csproj",
       "packagesPath": "C:\\Users\\卓卓\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\卓卓\\Desktop\\C#\\BMS\\Entity\\obj\\",
+      "outputPath": "C:\\Users\\卓卓\\Desktop\\C#\\c# bms\\BMS\\Entity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\environment\\dotnet\\sdk\\NuGetFallbackFolder"
